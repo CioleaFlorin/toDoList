@@ -59,7 +59,7 @@ public class ToDoItemRepository {
             ResultSet resultSet=statement.executeQuery(sql))
         {
             while (resultSet.next()){
-                ToDoItem toDoItem=new ToDoItem();
+                ToDoItem toDoItem = new ToDoItem();
                 toDoItem.setId(resultSet.getLong("id"));
                 toDoItem.setDescription(resultSet.getString("description"));
                 toDoItem.setDeadline(resultSet.getDate("deadline").toLocalDate());
@@ -67,6 +67,7 @@ public class ToDoItemRepository {
 
                 toDoItems.add(toDoItem);
             }
+
 
         }
 
