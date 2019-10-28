@@ -29,7 +29,7 @@ public class ToDoItemService {
         toDoItemRepository.deleteToDoItem(id);
     }
 
-    public List<ToDoItem> getToDoItem() throws SQLException, IOException, ClassNotFoundException {
+    public List<ToDoItem> getToDoItems() throws SQLException, IOException, ClassNotFoundException {
         System.out.println("Retriving to-do-items...");
         return toDoItemRepository.getToDoItems();
     }

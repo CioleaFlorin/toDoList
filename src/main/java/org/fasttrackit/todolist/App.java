@@ -26,8 +26,8 @@ public class App
         //toDoItemRepository.deleteToDoItem(1);
 
 
-        List<ToDoItem> toDoItems = toDoItemRepository.getToDoItems();
+        //List<ToDoItem> toDoItems = toDoItemRepository.getToDoItems();
 
-        System.out.println(toDoItems);
+        //System.out.println(toDoItems);
     }
 }
